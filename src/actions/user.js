@@ -64,7 +64,7 @@ const listenToAuth = () => (dispatch, getState) => {
         dispatch(closeLogin());
       });
     } else {
-      const { uid } = getState().plannerApp.user;
+      const { uid } = getState().app.user;
 
       if (uid) {
         firebase.database().ref(`presence/${uid}`).remove();

@@ -1,7 +1,7 @@
 {
-  "name": "festi-planner",
-  "version": "0.0.4",
-  "homepage": "https://grobim.github.io/festi-planner",
+  "name": "magic-mage-manager",
+  "homepage": "https://magic-maze-manager-dev.firebaseapp.com",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "firebase": "^4.8.1",
@@ -30,8 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "firebase deploy",
-    "predeploy-site": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "firebase deploy"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

@@ -5,7 +5,7 @@ import withWidth, { isWidthDown } from 'material-ui/utils/withWidth';
 import Fab from 'components/Fab';
 
 const mapStateToProps = ({
-  plannerApp: {
+  app: {
     ui: {
       global: {
         snackbars

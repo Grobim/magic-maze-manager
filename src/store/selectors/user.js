@@ -1,6 +1,6 @@
 import { USER_STATE_CONNECTED, USER_STATE_CONNECTING } from 'reducers/user';
 
-const userSelector = state => state.plannerApp.user;
+const userSelector = state => state.app.user;
 const stateSelector = state => userSelector(state).state;
 const publicDataSelector = state => userSelector(state).publicData;
 const photoUrlSelector = state => (publicDataSelector(state) || {}).photoURL;

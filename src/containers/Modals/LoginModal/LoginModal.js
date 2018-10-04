@@ -5,7 +5,7 @@ import LoginModal from 'components/Modals/LoginModal';
 import { closeLogin } from 'actions/ui/global';
 
 const mapStateToProps = ({
-  plannerApp: {
+  app: {
     ui: {
       global: {
         modals: {

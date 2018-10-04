@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import ReloadSnackbar from 'components/Snackbars/ReloadSnackbar';
 
 const mapStateToProps = ({
-  plannerApp: {
+  app: {
     ui: {
       global: {
         snackbars: {

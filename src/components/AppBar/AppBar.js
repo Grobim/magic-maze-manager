@@ -101,7 +101,7 @@ class AppBar extends Component {
           </IconButton>
           <Typography className={classes.title} variant="title" color="inherit">
             <Link href="/" to="/">
-              Festi - Planner
+              Magic Maze Manager
             </Link>
           </Typography>
           {isConnected ? (

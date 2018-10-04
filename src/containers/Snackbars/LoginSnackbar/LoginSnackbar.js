@@ -5,7 +5,7 @@ import LoginSnackbar from 'components/Snackbars/LoginSnackbar';
 import { showLogin, closeLoginMessage } from 'actions/ui/global';
 
 const mapStateToProps = ({
-  plannerApp: {
+  app: {
     ui: {
       global: {
         snackbars: {

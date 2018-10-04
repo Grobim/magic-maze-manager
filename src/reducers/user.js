@@ -2,7 +2,6 @@ const USER_CONNECT_REQUEST = 'USER_CONNECT_REQUEST';
 const USER_CONNECT_SUCCESS = 'USER_CONNECT_SUCCESS';
 const USER_CONNECT_ERROR = 'USER_CONNECT_ERROR';
 
-const USER_DISCONNECT_REQUEST = 'USER_DISCONNECT_REQUEST';
 const USER_DISCONNECT_SUCCESS = 'USER_DISCONNECT_SUCCESS';
 
 const USER_STATE_CONNECTING = 'USER_STATE_CONNECTING';
@@ -14,8 +13,8 @@ const defaultState = {
   state: USER_STATE_DISCONNECTED
 };
 
-const user = (state = defaultState, action) => {
-  switch (action.type) {
+const user = (state = defaultState, { type, payload } = {}) => {
+  switch (type) {
     case USER_CONNECT_REQUEST:
       return {
         ...state,
@@ -24,7 +23,7 @@ const user = (state = defaultState, action) => {
     case USER_CONNECT_SUCCESS:
       return {
         ...state,
-        ...action.payload,
+        ...payload,
         state: USER_STATE_CONNECTED
       };
     case USER_CONNECT_ERROR:
@@ -43,7 +42,6 @@ export {
   USER_CONNECT_REQUEST,
   USER_CONNECT_SUCCESS,
   USER_CONNECT_ERROR,
-  USER_DISCONNECT_REQUEST,
   USER_DISCONNECT_SUCCESS,
   USER_STATE_CONNECTING,
   USER_STATE_CONNECTED,

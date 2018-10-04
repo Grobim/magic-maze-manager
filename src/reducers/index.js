@@ -4,10 +4,10 @@ import user from './user';
 import ui from './ui';
 import profile from './profile';
 
-const plannerApp = combineReducers({
+const app = combineReducers({
   user,
   ui,
   profile
 });
 
-export default plannerApp;
+export default app;

@@ -7,7 +7,7 @@ import { syncProfile, unsyncProfile, editName, editAvatar } from 'actions/profil
 import Profile from 'components/Profile';
 
 const mapStateToProps = (
-  { plannerApp: { user, profile } },
+  { app: { user, profile } },
   { params: { uid } }
 ) => ({
   uid,

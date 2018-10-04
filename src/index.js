@@ -14,7 +14,7 @@ import { reactReduxFirebase, firebaseReducer } from 'react-redux-firebase';
 
 import 'typeface-roboto';
 
-import plannerApp from './reducers';
+import app from './reducers';
 import registerServiceWorker from './registerServiceWorker';
 import Routes from './Routes';
 
@@ -53,7 +53,7 @@ const createStoreWithFirebase = compose(...composers)(createStore);
 
 const rootReducer = combineReducers({
   firebase: firebaseReducer,
-  plannerApp,
+  app,
   routing: routerReducer
 });
 const initialState = {};
@@ -66,7 +66,7 @@ if (process.env.NODE_ENV !== 'production') {
     module.hot.accept('./reducers', () => {
       store.replaceReducer(combineReducers({
         firebase: firebaseReducer,
-        plannerApp,
+        app,
         routing: routerReducer
       }));
     });

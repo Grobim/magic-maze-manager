@@ -5,7 +5,7 @@ import DefaultSnackbar from 'components/Snackbars/DefaultSnackbar';
 import { closeError } from 'actions/ui/global';
 
 const mapStateToProps = ({
-  plannerApp: {
+  app: {
     ui: {
       global: {
         snackbars: {
