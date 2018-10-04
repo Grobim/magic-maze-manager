@@ -9,17 +9,11 @@
     "users": {
       "$uid": {
         ".read": "$uid === auth.uid",
-        "events": {
-          "member": {
-            ".indexOn": ["eventStartDate"]
-          }
-        },
+        ".write": "$uid === auth.uid",
         "publicData": {
           ".read": true,
-          ".write": "$uid === auth.uid"
         },
         "privateData": {
-          ".write": "$uid === auth.uid",
           "email": {
             ".read": "data.child('public').val() === true"
           }
