@@ -1,0 +1,30 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "presence": {
+      ".read": true,
+      ".write": true
+    },
+    "users": {
+      "$uid": {
+        ".read": "$uid === auth.uid",
+        "events": {
+          "member": {
+            ".indexOn": ["eventStartDate"]
+          }
+        },
+        "publicData": {
+          ".read": true,
+          ".write": "$uid === auth.uid"
+        },
+        "privateData": {
+          ".write": "$uid === auth.uid",
+          "email": {
+            ".read": "data.child('public').val() === true"
+          }
+        }
+      }
+    }
+  }
+}
