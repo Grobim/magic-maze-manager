@@ -1,7 +1,7 @@
 {
   "name": "magic-mage-manager",
   "homepage": "https://magic-maze-manager-dev.firebaseapp.com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^3.1.2",
