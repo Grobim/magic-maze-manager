@@ -1,17 +1,17 @@
 import React, { Fragment, Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { withStyles } from 'material-ui/styles';
+import { withStyles } from '@material-ui/core/styles';
 
-import Dialog from 'material-ui/Dialog';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import IconButton from 'material-ui/IconButton';
-import Typography from 'material-ui/Typography';
+import Dialog from '@material-ui/core/Dialog';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
 
-import CloseIcon from 'material-ui-icons/Close';
+import CloseIcon from '@material-ui/icons/Close';
 
-import Slide from 'material-ui/transitions/Slide';
+import Slide from '@material-ui/core/Slide';
 
 import Loadable from 'react-loadable';
 import Loader from 'components/Loader';
@@ -91,7 +91,7 @@ class LoginModal extends Component {
             fullScreen
             open={transitionOpen}
             onClose={closeLogin}
-            transition={Transition}
+            TransitionComponent={Transition}
           >
             <AppBar className={classes.appBar}>
               <Toolbar>

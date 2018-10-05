@@ -1,20 +1,22 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import { withStyles } from 'material-ui/styles';
+import { withStyles } from '@material-ui/core/styles';
 
-import MaterialAppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import Menu, { MenuItem } from 'material-ui/Menu';
-import Typography from 'material-ui/Typography';
-import IconButton from 'material-ui/IconButton';
-import Button from 'material-ui/Button';
-import Avatar from 'material-ui/Avatar';
-import { ListItemIcon, ListItemText } from 'material-ui/List';
+import MaterialAppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import Button from '@material-ui/core/Button';
+import Avatar from '@material-ui/core/Avatar';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 
-import MenuIcon from 'material-ui-icons/Menu';
-import AccountCircleIcon from 'material-ui-icons/AccountCircle';
-import ExitToAppIcon from 'material-ui-icons/ExitToApp';
+import MenuIcon from '@material-ui/icons/Menu';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 import Link from 'components/Link';
 

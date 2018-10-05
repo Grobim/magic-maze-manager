@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 
 import { connect } from 'react-redux';
 
-import { withStyles } from 'material-ui/styles';
-
-import Reboot from 'material-ui/Reboot';
+import { withStyles } from '@material-ui/core/styles';
 
 import { listenToAuth } from 'actions/user';
 
@@ -36,7 +34,6 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Reboot />
         <AppBar />
         <Drawer />
         <div className={this.props.classes.content}>

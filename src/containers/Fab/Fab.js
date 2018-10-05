@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import withWidth, { isWidthDown } from 'material-ui/utils/withWidth';
+import withWidth, { isWidthDown } from '@material-ui/core/withWidth';
 
 import Fab from 'components/Fab';
 

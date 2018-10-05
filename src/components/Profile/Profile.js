@@ -1,19 +1,21 @@
 import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-import { withStyles } from 'material-ui/styles';
+import { withStyles } from '@material-ui/core/styles';
 
-import Grid from 'material-ui/Grid';
-import Paper from 'material-ui/Paper';
-import Icon from 'material-ui/Icon';
-import IconButton from 'material-ui/IconButton';
-import Avatar from 'material-ui/Avatar';
-import List, { ListItem, ListItemText, ListItemSecondaryAction } from 'material-ui/List';
-import TextField from 'material-ui/TextField';
-
-import AccountCircleIcon from 'material-ui-icons/AccountCircle';
-import ModeEditIcon from 'material-ui-icons/ModeEdit';
-import FileUploadIcon from 'material-ui-icons/FileUpload';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Icon from '@material-ui/core/Icon';
+import IconButton from '@material-ui/core/IconButton';
+import Avatar from '@material-ui/core/Avatar';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
+import TextField from '@material-ui/core/TextField';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import EditIcon from '@material-ui/icons/Edit';
 
 const styles = theme => ({
   layout: {
@@ -163,13 +165,11 @@ class Profile extends Component {
           <Paper>
             <Grid container>
               <Grid item xs={12} className={classes.avatarLayout}>
-                <Icon color="primary">
-                  {user && (user.public || {}).photoURL ? (
-                    <Avatar src={user.public.photoURL} className={classes.avatarIcon} />
-                  ) : (
-                    <AccountCircleIcon className={classes.avatarIcon} />
-                  )}
-                </Icon>
+                {user && (user.public || {}).photoURL ? (
+                  <Avatar src={user.public.photoURL} className={classes.avatarIcon} />
+                ) : (
+                  <AccountCircleIcon color="primary" className={classes.avatarIcon} />
+                )}
                 {isCurrentUser && (
                   <Fragment>
                     <IconButton
@@ -177,7 +177,7 @@ class Profile extends Component {
                       onClick={this.handleEditAvatar}
                       className={classes.avatarEdit}
                     >
-                      <FileUploadIcon />
+                      <CloudUploadIcon />
                     </IconButton>
                     <input
                       type="file"
@@ -220,7 +220,7 @@ class Profile extends Component {
                           onClick={this.handleEditName}
                           color={editName ? 'secondary' : 'default'}
                         >
-                          <ModeEditIcon />
+                          <EditIcon />
                         </IconButton>
                       </ListItemSecondaryAction>
                     )}

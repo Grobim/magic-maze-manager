@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MaterialDrawer from 'material-ui/Drawer';
-import List, { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
-import EventIcon from 'material-ui-icons/Event';
+import MaterialDrawer from '@material-ui/core/Drawer';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import EventIcon from '@material-ui/icons/Event';
 
 const Drawer = ({
   isOpened,

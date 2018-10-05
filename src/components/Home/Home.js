@@ -1,11 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 const Home = () => (
-  <Fragment>
-    <p>
-      Site under construction &lt;3
-    </p>
-  </Fragment>
+  <p>
+    Site under construction &lt;3
+  </p>
 );
 
 export default Home;
